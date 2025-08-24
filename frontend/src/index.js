@@ -5,12 +5,13 @@ import { LandingPage } from './LandingPage';
 import { AboutUs } from './AboutUs';
 import { Login } from './Login';
 import { DashboardOverview } from './Dashboard';
+import { PartnerView } from './PartnerView';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DashboardOverview />
+    <PartnerView />
   </React.StrictMode>
 );
 

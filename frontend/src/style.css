@@ -1971,3 +1971,175 @@ html, body {
   font-size: 13px;
   color: #697077;
 }
+
+/* Partner View Page Styles */
+.partner-view-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: #F2F4F8;
+  background-image: 
+    linear-gradient(rgba(221, 225, 230, 0.5) 1px, transparent 1px),
+    linear-gradient(to right, rgba(221, 225, 230, 0.5) 1px, transparent 1px);
+  background-size: 20px 20px;
+  font-family: 'Roboto', -apple-system, Roboto, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.partner-view-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #FFF;
+  flex-shrink: 0;
+}
+
+.partner-view-logo {
+  width: 140px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.partner-view-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  overflow-y: hidden;
+}
+
+.credential-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 720px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid #E5E8EC;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.credential-card-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.credential-card-header h1 {
+  color: #21272A;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.credential-card-header p {
+  color: #48466D;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.credential-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.credential-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #48466D;
+}
+
+.credential-textarea {
+  background-color: #F2F4F8;
+  border: 1px solid #DDE1E6;
+  border-radius: 10px;
+  padding: 16px;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  color: #21272A;
+  height: 300px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.credential-textarea:focus {
+  border-color: #0F62FE;
+}
+
+.submit-credential-button {
+  background-color: #0F62FE;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+  margin-top: 8px;
+}
+
+.submit-credential-button:hover {
+  background-color: #0056B3;
+}
+
+.partner-view-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: #5D5D5D;
+  flex-shrink: 0;
+}
+
+/* Credential Success Message Styles */
+.credential-success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.credential-success-message {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #eaffea;
+  border: 1px solid #b2e6b2;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+}
+
+.credential-success-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 15px;
+  color: #21272A;
+}
+
+.credential-success-text strong {
+  font-weight: 700;
+}
+
+.credential-success-footer-text {
+  font-size: 13px;
+  color: #697077;
+}
