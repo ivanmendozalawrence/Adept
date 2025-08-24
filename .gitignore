@@ -57,3 +57,4 @@ __pycache__/
 *.tmp
 
 .config/
+builder.config.json
