@@ -1,0 +1,16 @@
+{
+  "name": "adept-monorepo",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend-node"
+  ],
+  "scripts": {
+  "dev:frontend": "npm run dev --workspace frontend",
+  "dev:backend": "npm run dev --workspace backend-node",
+  "dev": "powershell -Command \"Start-Job { npm run dev:backend }; Start-Sleep -Seconds 1; npm run dev:frontend\"",
+    "start": "npm run start --workspace frontend",
+    "build": "npm run build --workspace frontend",
+    "test": "npm run test --workspace frontend"
+  }
+}
